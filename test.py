@@ -13,6 +13,17 @@ class TestRomanConverter(unittest.TestCase):
         # Assert
         self.assertEqual(result, expected_output)
         
+    def test_valid_number(self):
+        # Arrange
+        input_number = "13"
+        expected_output = "XIII"
+        
+        # Act
+        result = convert_to_roman(input_number)
+        
+        # Assert
+        self.assertEqual(result, expected_output)
+        
     def test_invalid_number_range(self):
         # Arrange
         input_number = "5132"
