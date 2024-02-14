@@ -13,7 +13,7 @@ class TestRomanConverter(unittest.TestCase):
         # Assert
         self.assertEqual(result, expected_output)
         
-    def test_valid_number(self):
+    def test_valid_number2(self):
         # Arrange
         input_number = "13"
         expected_output = "XIII"
